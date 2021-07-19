@@ -3,7 +3,7 @@
 * 저자 : [조슈아 블로크](https://github.com/jbloch)
 * 예제 코드
   - [한글판](https://github.com/WegraLee/effective-java-3e-source-code)
-  - [원본] (https://github.com/jbloch/effective-java-3e-source-code)
+  - [원본](https://github.com/jbloch/effective-java-3e-source-code)
 
 ## Ch2. 객체 생성과 파괴
 | 아이템 | 정리 링크
