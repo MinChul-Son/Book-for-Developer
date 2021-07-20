@@ -9,6 +9,7 @@
 | 아이템 | 정리 링크
 :---: | :---:
 **아이템 1. 생성자 대신 정적 팩터리 메서드를 고려하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item1.md)
+**아이템 2. 생성자 매개변수가 많다면 빌더를 고려하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item2.md)
 
 --------------------------------
 # 읽기 좋은 코드가 좋은 코드다
