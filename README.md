@@ -14,6 +14,7 @@
 **아이템 4. 인스턴스화를 막으려거든 private 생성자를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item4.md)
 **아이템 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item5.md)
 **아이템 6. 불필요한 객체 생성을 피하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item6.md)
+**아이템 7. 다 쓴 객체 참조를 해제하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item7.md)
 
 --------------------------------
 # 읽기 좋은 코드가 좋은 코드다
