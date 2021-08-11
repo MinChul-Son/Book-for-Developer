@@ -209,8 +209,131 @@ ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
 `SmellPoint`는 `Point`의 하위 클래스이므로 첫번째 if문을 통과한다. 두번째 if문에 걸려들어가 `mySmellPoint.equals(myColorPoint)`가 호출되고 서로가 서로를 호출하는 상황이 반복되며
 결국 `StackOverflowError`가 발생할 것이다!!!!
 
+사실 이는 OOP 언어의 동치관계에서 나타나는 근본적인 문제로 **구체 클래스를 확장해 새로운 값을 추가하면서 `equals` 규약을 만족시킬 방법은 존재하지 않는다.**
 
+이 말은 `equals`안의 `instanceof`를 `getClass`로 바꾸면 규약도 지키고 값도 추가하며 구체 클래스를 상속할 수 있을 것이라 들릴 수 있다.
+```java
+// Point의 equals이다.
+@Override 
+public boolean equals(Object o) {
+	if (o == null || o.getClass() != getClass())
+		return false;
+	Point p = (Point) o;
+	return p.x == x && p.y == y;
+}
 
+// Point를 상속받는 하위 클래스
+public class CounterPoint extends Point {
+    private static final AtomicInteger counter =
+            new AtomicInteger();
+
+    public CounterPoint(int x, int y) {
+        super(x, y);
+        counter.incrementAndGet();
+    }
+    public static int numberCreated() { return counter.get(); }
+}
+```
+이번 `Point`의 `equals`는 같은 구현 클래스의 객체와 비교할 때만 `true`를 반환한다. `Point`의 하위 클래스는 어디서든 `Point`로 활용이 가능해야하지만 `getClass`를 사용하면 그렇지 못한다. 이것은 우리가 흔히 아는 `SOLID`의 `LSP(리스코프 치환 원칙)`을 위반하고 있다. 이를 아래 코드로 알아보자.
+```java
+public class CounterPointTest {
+    // 단위 원 안의 모든 점을 포함하도록 unitCircle을 초기화한다. 
+    private static final Set<Point> unitCircle = Set.of(
+            new Point( 1,  0), new Point( 0,  1),
+            new Point(-1,  0), new Point( 0, -1));
+
+    public static boolean onUnitCircle(Point p) {
+        return unitCircle.contains(p);
+    }
+
+    public static void main(String[] args) {
+        Point p1 = new Point(1,  0);
+        Point p2 = new CounterPoint(1,  0);
+
+        // true를 출력한다.
+        System.out.println(onUnitCircle(p1));
+
+        // false를 출력한다.
+        System.out.println(onUnitCircle(p2));
+    }
+}
+```
+명확히 `LSP`를 위반하고 있음을 확인할수 있다. `contains`에서 내부적으로 `equals`를 사용하는데 `getClass`를 사용하였기 때문에 `false`가 반환된다. 만약 `instanceof`를 사용하였다면
+`CounterPoint` 인스턴스를 넘겨주어도 정상 동작할 수 있다.
+
+#### 상속 대신 컴포지션을 사용하라!
+책에서 괜찮은 우회 방법으로 상속 대신 컴포지션을 사용하는 방법을 제시하고 있다.
+
+```java
+public class ColorPoint {
+    private final Point point;
+    private final Color color;
+
+    public ColorPoint(int x, int y, Color color) {
+        point = new Point(x, y);
+        this.color = Objects.requireNonNull(color);
+    }
+
+    /**
+     * 이 ColorPoint의 Point 뷰를 반환한다.
+     */
+    public Point asPoint() {
+        return point;
+    }
+
+    @Override public boolean equals(Object o) {
+        if (!(o instanceof ColorPoint))
+            return false;
+        ColorPoint cp = (ColorPoint) o;
+        return cp.point.equals(point) && cp.color.equals(color);
+    }
+}    
+```
+
+실제 자바 라이브러리에 구체 클래스를 확장해 값을 추가한 클래스가 종종 있다.
+
+`java.sql.Timestamp`는 `java.util.Date`를 확장한 후 `nanoseconds`필드를 추가하였다. 결국 `Timestamp`의 `equals`는 대칭성을 위배하여 `Date`객체와 한 컬렉션에 넣거나 섞어 사용하게되면
+의도치않은 방향으로 동작할 수 있는 문제가 있다.(둘을 명확히 분리해서 사용하면 문제없음)
+
+참고로 **abstract 클래스의 하위 클래스라면 `equals` 규약을 지키면서 값을 추가할 수 있다. 위에서 다룬 내용은 상위 클래스를 직접 인스턴스로 만드는 것이 가능할 때의 이야기**이다.
+
+### 일관성
+두 객체가 같다면 수정되지 않는 한 영원히 같아야 한다는 뜻이다.(불변 객체로 만들지, 가변 객체로 만들지를 판단해야한다.)
+
+**클래스가 불변이든 가변이든 `equals`의 판단에 신뢰할 수 없는 자원이 끼어들게 해서는 안된다.** `equals`는 항상 메모리에 존재하는 객체만을 사용한 결정적인 계산만 수행하여아한다.
+
+예시로 `java.net.URL`의 `equals`는 주어진 `URL`과 매핑된 호스트의 `IP 주소`를 이용해 비교한다. 호스트 이름을 `IP 주소`로 바꾸려면 네트워크를 통해야하고, 결과가 항상 같다고 보장할 수 없다.
+
+### null 아님
+모든 객체가 `null`과 같지 않아야 한다는 뜻이다.
+
+`instanceof`는 피연산자가 `null`이면 `false`를 반환하기 때문에 명시적으로 개발자가 `null`을 검사할 필요는 없다.
+
+------------------------------------------
+## 정리
+### 순서
+#### 1. == 연산자를 사용해 입력이 자신의 참조인지를 확인
+`float`와 `double`은 `compare`을 통해 비교, 나머지는 `==`을 사용
+
+#### 2. instanceof로 입력이 올바른 타입인지 확인
+`null`도 정상 값으로 취급하는 참조 타입 필드도 있기 때문에 이런 필드는 정적 메서드인 `Object.equals`를 사용해 `NullPointerException`을 발생시키자.
+
+#### 3. 입력을 올바른 타입으로 캐스팅(형변환)
+
+#### 4. 파라미터로 넘어온 객체와 자신의 대응되는 핵심 필드들이 모두 일치하는지 하나씩 모두 검사
+
+### 그 외
+비교하기 매우 복잡한 필드를 가진 클래스라면 필드의 표준형을 저장해둔 후 표준형끼리 비교하면 경제적이다!(`final`을 통해 불변 필드로 표준형을 지정해둔다는 의미)
+
+어떤 필드를 비교하냐에 따라 `equals` 성능이 좌우될 수 있다. 다를 가능성이 더 크거나 비교하는 비용이 싼 필드부터 비교하는 것이 성능에 도움이 된다.
+
+동기화용 락(lock)필드 같이 객체의 논리적 상태와 관련없는 필드는 비교 대상이 아니다.
+
+핵심 필드로부터 계산 가능한 파생 필드 또한 비교 대상이 아니다. 하지만 파생 필드를 비교하는 쪽이 더 빠른 경우에는 파생 필드를 비교하는 것이 좋다.(파생 필드가 객체 전체 상태를 대표할 때)
+
+#### `equals`를 재정의할 땐 `hashcode`도 반드시 함께 재정의해라!
+
+#### `equals`의 입력타입은 반드시 `Object`여야한다!
 
 
 
