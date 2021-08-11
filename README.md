@@ -18,7 +18,7 @@
 **아이템 8. finalizer와 cleaner의 사용을 피하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item8.md)
 **아이템 9. try-finally보다는 try-with-resources를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch02/Item9.md)
 
-## Ch2. 객체 생성과 파괴
+## Ch3. 모든 객체의 공통 메서드
 | 아이템 | 정리 링크
 :---: | :---:
 **아이템 10. equals는 일반 규약을 지켜 재정의하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item10.md)
