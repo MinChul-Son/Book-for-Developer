@@ -23,6 +23,8 @@
 :---: | :---:
 **아이템 10. equals는 일반 규약을 지켜 재정의하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item10.md)
 **아이템 11. equals를 재정의하려거든 hashCode도 재정의하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item11.md)
+**아이템 12. toString을 항상 재정의하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item12.md)
+
 --------------------------------
 # 읽기 좋은 코드가 좋은 코드다
 * 저자 : 더스틴 보즈웰, 트레퍼 파우커
