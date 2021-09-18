@@ -72,6 +72,51 @@ public class Member implements Serializable {
 
 ## public 클래스의 인스턴스 필드는 되도록 public이 아니어야 한다.
 * 불변을 보장할 수 없다.
-*  
+* 쓰레드 안전하지 않다.
+    - 인스턴스 변수는 힙에 할당되며 공유 자원임
+    
+* `public final` 필드는 내부 구현 변경 시에 사용되는 모든 곳을 리팩토링 해야함.
 
+#### 예외적으로 `public static final` 필드는 공개해도 좋다!
+추상 개념을 완성하는데 꼭 필요한 구성 요소로써의 상수인 경우
 
+이 경우 관례상 모든 단어는 대문자이고 단어 사이에는 `_`을 넣는다.
+
+```java
+public static final long MY_NUMBER = "123456677";
+```
+
+**이런 필드는 반드시 기본 타입 값이나 불변 객체를 참조해야한다!!**
+
+#### 클래스에서 `public static final`배열 필드를 두거나 이 필드를 반환하는 접근자를 제공해선 안된다.
+
+### 해결책
+1. 불변 리스트 추가
+   
+```java
+private static final Thing[] PRIVATE_VALUES = {SOMETHING.....};
+public static final List<Thing> VALUES = 
+    Collections.unmodifiableList(Arrays.asList(PRIVATE_VALUES))
+```
+
+2. 방어적 복사
+```java
+private static final Thing[] PRIVATE_VALUES = {SOMETHING.....};
+public static final Thing[] values() {
+    return PRIVATE_VALUES.clone();
+    }
+```
+
+## 모듈 시스템
+패키지 -> 클래스의 묶음
+
+모듈 -> 패키지의 묶음
+
+모듈에 속하는 패키지 중 공개할 것을 선언할 수 있다.
+==> `public`, `protected`여도 공개 대상이 아니라면 외부에서 접근 불가
+
+패키지끼리는 공유를하며 외부에는 공개를 하지 않을 수 있다는 의미!!
+
+`jar` 패키징 시 `module-info`를 포함하여 패키징하므로 루트의 `classpath`에 추가하여도 공개하지 않은 모듈은 접근 불가
+
+`JDK`는 이런 방식으로 사용해 공개하지 않은 패키지를 해당 모듈 밖에서 접근할 수 없도록 하였다.
