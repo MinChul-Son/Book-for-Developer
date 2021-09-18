@@ -54,5 +54,24 @@ public class Outer {
 
 하지만 `Serializable`을 구현한 클래스에서는 의도치 않게 필드들도 공개 API가 될 수 있기에 주의하자.
 
+```java
+public class Member implements Serializable {
+  private static final long serialID = 1L;
+  private String id;
+  private String password;
+  private String name;
+}
+```
+
+위와 같은 `Serializable`을 구현한 클래스를 역직렬화하는 과정에서 `private`인 필드가 공개될 수 있다는 의미이다.
+
+`package-private`에서 `protected`로 바꾸면 그 멤버에 접근할 수 있는 범위가 매우 넓어지기 때문에 **`protected` 멤버의 수는 적을 수록 좋다.**
+
+### 리스코프 치환 원칙을 위한 제약
+`LSP`를 지키기위해 상위 클래스를 재정의할 때 접근 수준을 상위 클래스보다 더 좁게 설정할 수 없다.(부모 클래스가 `public`일 때 자식 클래스를 `private`으로 하면 컴파일 에러)
+
+## public 클래스의 인스턴스 필드는 되도록 public이 아니어야 한다.
+* 불변을 보장할 수 없다.
+*  
 
 
