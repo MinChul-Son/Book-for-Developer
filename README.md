@@ -27,6 +27,11 @@
 **아이템 13. clone 재정의는 주의해서 진행하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item13.md)
 **아이템 14. Comparable을 구현할지 고려하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch03/Item14.md)
 
+## Ch4. 클래스와 인터페이스
+| 아이템 | 정리 링크
+:---: | :---:
+**아이템 15 : 클래스와 멤버의 접근 권한을 최소화하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch04/Item15.md)
+
 --------------------------------
 # 읽기 좋은 코드가 좋은 코드다
 * 저자 : 더스틴 보즈웰, 트레퍼 파우커
