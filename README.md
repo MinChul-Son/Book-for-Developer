@@ -59,3 +59,18 @@
 **6. 명확하고 간결한 주석 달기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/The%20Art%20of%20Readable%20Code/Part%201/ch06.md)
 
 
+<br>
+<br>
+
+--------------------------------
+
+<br>
+<br>
+
+# 📚📚 HTTP 완벽가이드
+* 저자 : 데이빗 고울리, 브라이언 토티, 마조리 세이어, 세일루 레디, 안슈 아가왈
+
+## 1. HTTP : 웹의 기초
+| 챕터 | 정리 링크
+:---: | :---:
+**4. 커넥션 관리** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/HTTP%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C/4%EC%9E%A5.%20%EC%BB%A4%EB%84%A5%EC%85%98%20%EA%B4%80%EB%A6%AC.md)
