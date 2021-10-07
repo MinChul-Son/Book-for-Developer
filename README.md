@@ -1,5 +1,4 @@
-# 📚📚
-# 이펙티브 자바 3판(Effective Java 3/E)
+# 📚📚 이펙티브 자바 3판(Effective Java 3/E)
 * 저자 : [조슈아 블로크](https://github.com/jbloch)
 * 예제 코드
   - [한글판](https://github.com/WegraLee/effective-java-3e-source-code)
@@ -41,7 +40,7 @@
 <br>
 <br>
 
-# 읽기 좋은 코드가 좋은 코드다
+# 📚📚 읽기 좋은 코드가 좋은 코드다
 * 저자 : 더스틴 보즈웰, 트레퍼 파우커
 
 ## 서론
