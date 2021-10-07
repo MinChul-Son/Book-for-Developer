@@ -33,6 +33,28 @@
 **아이템 15 : 클래스와 멤버의 접근 권한을 최소화하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Effective%20Java%203E/Ch04/Item15.md)
 **아이템 16 : public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item16.md)
 
+<br>
+<br>
+
 --------------------------------
+
+<br>
+<br>
+
 # 읽기 좋은 코드가 좋은 코드다
 * 저자 : 더스틴 보즈웰, 트레퍼 파우커
+
+## 서론
+| 챕터 | 정리 링크
+:---: | :---:
+**1. 코드는 이해하기 쉬워야 한다** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/ch01.md)
+
+
+## PART 1
+| 챕터 | 정리 링크
+:---: | :---:
+**2. 이름에 정보 담기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch02.md)
+**3. 오해할 수 없는 이름들** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch03.md)
+**4. 미학** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch04.md)
+**5. 주석에 담아야하는 대상** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch05.md)
+
