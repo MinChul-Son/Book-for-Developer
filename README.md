@@ -56,4 +56,6 @@
 **3. 오해할 수 없는 이름들** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch03.md)
 **4. 미학** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch04.md)
 **5. 주석에 담아야하는 대상** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%201/ch05.md)
+**6. 명확하고 간결한 주석 달기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/The%20Art%20of%20Readable%20Code/Part%201/ch06.md)
+
 
