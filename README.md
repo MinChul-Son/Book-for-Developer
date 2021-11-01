@@ -66,6 +66,7 @@
 :---: | :---:
 **7. 읽기 쉽게 흐름제어 만들기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%202/ch07.md)
 **8. 거대한 표현을 잘게 쪼개기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%202/ch08.md)
+**9. 변수와 가독성** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%202/ch09.md)
 
 
 
