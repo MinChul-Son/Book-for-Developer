@@ -39,6 +39,7 @@
 **아이템 22 : 인터페이스는 타입을 정의하는 용도로만 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item22.md)
 **아이템 23 : 태그 달린 클래스보다는 클래스 계층구조를 활용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item23.md)
 **아이템 24 : 멤버 클래스는 되도록 static으로 만들라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item24.md)
+**아이템 25 : 톱레벨 클래스는 한 파일에 하나만 담으라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item25.md)
 
 <br>
 <br>
