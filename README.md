@@ -75,6 +75,11 @@
 **8. 거대한 표현을 잘게 쪼개기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%202/ch08.md)
 **9. 변수와 가독성** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%202/ch09.md)
 
+## PART 3
+| 챕터 | 정리 링크
+:---: | :---:
+**10. 상관없는 하위문제 추출하기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch10.md)
+**11. 한번에 하나씩** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch11.md)
 
 
 <br>
