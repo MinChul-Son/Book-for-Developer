@@ -80,6 +80,8 @@
 :---: | :---:
 **10. 상관없는 하위문제 추출하기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch10.md)
 **11. 한번에 하나씩** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch11.md)
+**12. 생각을 코드로 만들기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch12.md)
+**13. 코드 분량줄이기** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch13.md)
 
 
 <br>
