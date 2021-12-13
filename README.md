@@ -81,6 +81,12 @@
 |  **12. 생각을 코드로 만들기**   | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch12.md) |
 |    **13. 코드 분량줄이기**    | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%203/ch13.md) |
 
+## PART 4
+| 챕터               | 정리 링크                                                                                                               |
+|------------------|---------------------------------------------------------------------------------------------------------------------|
+| **14. 테스트와 가독성** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/The%20Art%20of%20Readable%20Code/Part%204/ch14.md) |
+
+
 <br>
 <br>
 
