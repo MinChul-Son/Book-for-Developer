@@ -41,6 +41,12 @@
 |         **아이템 24 : 멤버 클래스는 되도록 static으로 만들라**          | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item24.md) |
 |          **아이템 25 : 톱레벨 클래스는 한 파일에 하나만 담으라**           | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item25.md) |
 
+## Ch5. 제네릭
+| 아이템                        | 정리 링크                                                                                                  |
+|----------------------------|--------------------------------------------------------------------------------------------------------|
+| **아이템 26 : 로 타입은 사용하지 말라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item26.md) |
+
+
 <br>
 <br>
 
