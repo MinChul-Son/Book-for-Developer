@@ -42,9 +42,11 @@
 |          **아이템 25 : 톱레벨 클래스는 한 파일에 하나만 담으라**           | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch04/Item25.md) |
 
 ## Ch5. 제네릭
-| 아이템                        | 정리 링크                                                                                                  |
-|----------------------------|--------------------------------------------------------------------------------------------------------|
-| **아이템 26 : 로 타입은 사용하지 말라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item26.md) |
+| 아이템                          | 정리 링크                                                                                                  |
+|------------------------------|--------------------------------------------------------------------------------------------------------|
+| **아이템 26 : 로 타입은 사용하지 말라**   | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item26.md) |
+| **아이템 27 : 비검사 경고를 제거하라**    | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item27.md) |
+| **아이템 28 : 배열보다는 리스트를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item28.md) |
 
 
 <br>
