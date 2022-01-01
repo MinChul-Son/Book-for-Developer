@@ -110,5 +110,6 @@
 |        챕터        |                                                                                            정리 링크                                                                                            |
 |:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  **4. 커넥션 관리**   | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/HTTP%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C/4%EC%9E%A5.%20%EC%BB%A4%EB%84%A5%EC%85%98%20%EA%B4%80%EB%A6%AC.md) |
+|   **9. 웹 로봇**    |                                 [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/readme/HTTP%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C)                                 |
 | **10. HTTP/2.0** |                   [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/HTTP%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C/10%EC%9E%A5.%20HTTP%202.0.md)                    |
 
