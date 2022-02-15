@@ -48,6 +48,12 @@
 | **아이템 27 : 비검사 경고를 제거하라**    | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item27.md) |
 | **아이템 28 : 배열보다는 리스트를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch05/Item28.md) |
 
+## Ch6. 열거 타입과 애너테이션
+
+| 아이템                                | 정리 링크                                                                                                  |
+|------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **아이템 34 : int 상수 대신 열거 타입을 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch06/Item34.md) |
+
 
 <br>
 <br>
