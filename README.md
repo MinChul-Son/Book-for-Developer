@@ -61,6 +61,13 @@
 | **아이템 41 : 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라**     | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch06/Item41.md) |
 
 
+## Ch7. 람다와 스트림
+
+| 아이템                             | 정리 링크                                                                                                  |
+|---------------------------------|--------------------------------------------------------------------------------------------------------|
+| **아이템 42 : 익명 클래스보다는 람다를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch07/Item42.md) |
+
+
 <br>
 <br>
 
