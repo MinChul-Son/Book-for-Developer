@@ -66,6 +66,7 @@
 | 아이템                             | 정리 링크                                                                                                  |
 |---------------------------------|--------------------------------------------------------------------------------------------------------|
 | **아이템 42 : 익명 클래스보다는 람다를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch07/Item42.md) |
+| **아이템 43 : 람다보다는 메서드 참조를 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch07/Item43.md) |
 
 
 <br>
