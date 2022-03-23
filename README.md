@@ -73,6 +73,12 @@
 | **아이템 47 : 반환 타입으로는 스트림보다 컬렉션이 낫다** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch07/Item47.md) |
 | **아이템 48 : 스트림 병렬화는 주의해서 적용하라**     | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch07/Item48.md) |
 
+
+## Ch8. 메서드
+
+| 아이템                          | 정리 링크                                                                                                  |
+|------------------------------|--------------------------------------------------------------------------------------------------------|
+| **아이템 49 : 매개변수가 유효한지 검사하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch08/Item49.md) |
 <br>
 <br>
 
