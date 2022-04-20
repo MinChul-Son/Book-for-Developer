@@ -174,4 +174,4 @@
 
 |        챕터         |                                          정리 링크                                          |
 |:-----------------:|:---------------------------------------------------------------------------------------:|
-| **14. 일관성 있는 협력** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/object/ch14/Object/Ch14.md) |
+| **14. 일관성 있는 협력** | [링크](https://github.com/MinChul-Son/Book-for-Developer/blob/main/Object/Ch14.md) |
