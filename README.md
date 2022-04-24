@@ -94,6 +94,7 @@
 | **아이템 57 : 지역변수의 범위를 최소화하라**              | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch09/Item57.md) |
 | **아이템 58 : 전통적인 for문보다는 for-each문을 사용하라** | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch09/Item58.md) |
 | **아이템 59 : 라이브러리를 익히고 사용하라**              | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch09/Item59.md) |
+| **아이템 61 : 박싱된 기본 타입보다는 기본 타읍을 사용하라**     | [링크](https://github.com/MinChul-Son/Book-for-Developer/tree/main/Effective%20Java%203E/Ch09/Item61.md) |
 
 
 <br>
